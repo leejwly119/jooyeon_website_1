@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title> — Jooyeon Lee</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="project.css" />
+</head>
+
+<body>
+  <header class="nav">
+    <a href="../index.html" class="brand">JOOYEON <span>LEE</span></a>
+    <div lang="ko" class="koname">이주연</div>
+    <nav>
+      <div class="dropdown">
+        <a href="../webpage1/work.html" class="dropbtn">Work</a>
+        <div class="dropdown-content">
+          <a href="../webpage1/fineart.html">Fine Art</a>
+          <a href="../webpage1/creativecoding.html">Creative Coding</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="../webpage2/about.html" class="dropbtn">About</a>
+        <div class="dropdown-content">
+          <a href="../webpage2/about.html#statement">Artist Statement</a>
+          <a href="../webpage2/about.html#cv">CV</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="../webpage3/contact.html" class="dropbtn">Contact</a>
+        <div class="dropdown-content">
+          <a href="../webpage3/contact.html#email">Email</a>
+          <a href="../webpage3/contact.html#socials">Social</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="project-page">
+    <div class="project-wrap">
+      <a class="backlink" href="../webpage1/fineart.html">← Back to Fine Art</a>
+
+      <section class="project-hero">
+        <div class="media ratio-4x5">
+          <img src="../assets/img/you_are_allowed_to_step_here.jpg" alt="">
+        </div>
+
+        <aside class="project-meta">
+          <h1></h1>
+          <p class="muted">Ceramic, Silicone · 2025</p>
+          <ul class="facts">
+            <li>Dimensions: 12"*17", 12"*16"*7" </li>
+            <!-- <li><strong>Location:</strong> (add)</li>
+            <li><strong>Status:</strong> (add)</li> -->
+          </ul>
+        </aside>
+      </section>
+
+      <section class="project-body">
+        <p>
+          This silicone rug adopts the standard proportions of a household welcome mat—an object meant to be stepped on without thought, a surface that signals comfort, entry, and ease. But instead, the rug is covered with silicone cones wrapped in medical gauze. From afar, the cones read almost like spikes, creating an immediate sense of caution. The word <em>WELCOME</em> stretches across the surface, but the invitation is troubled by the unfamiliar terrain beneath it: Are you truly meant to step here? Is this surface allowed to be touched?
+        </p>
+
+        <p>
+          It creates a moment of hesitation, which is the core of the work. The viewer’s body recognizes contradiction: the mind reads “welcome,” but the surface signals risk. Approach becomes negotiation.
+        </p>
+
+        <p>
+          Yet once the viewer overcomes the hesitation and attempts to step, they encounter an unexpected tenderness. The cones bend, wobble, and yield softly under weight. The rug becomes something that listens to the body rather than resists it. There is an emotional pivot—from fear and curiosity to gentleness.
+        </p>
+
+        <p>
+          This work reimagines a domestic object as a site of psychological testing, where invitation and doubt coexist. It asks how often we misread the unfamiliar as dangerous, and how often we distance ourselves from what is, in fact, soft.
+        </p>
+      </section>
+
+      <section class="gallery" aria-label="More images">
+        <div class="media ratio-5x4">
+          <img src="../assets/img/you_are_allowed_to_step_here_detail1.jpg" alt="Detail view 1">
+        </div>
+        <div class="media ratio-5x4">
+          <img src="../assets/img/you_are_allowed_to_step_here_detail2.jpg" alt="Detail view 2">
+        </div>
+        <div class="media ratio-5x4">
+          <img src="../assets/img/you_are_allowed_to_step_here_detail3.jpg" alt="Detail view 3">
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Jooyeon Lee. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

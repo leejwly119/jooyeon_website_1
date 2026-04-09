@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title> — Jooyeon Lee</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="project.css" />
+</head>
+
+<body>
+  <header class="nav">
+    <a href="../index.html" class="brand">JOOYEON <span>LEE</span></a>
+    <div lang="ko" class="koname">이주연</div>
+    <nav>
+      <div class="dropdown">
+        <a href="../webpage1/work.html" class="dropbtn">Work</a>
+        <div class="dropdown-content">
+          <a href="../webpage1/fineart.html">Fine Art</a>
+          <a href="../webpage1/creativecoding.html">Creative Coding</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="../webpage2/about.html" class="dropbtn">About</a>
+        <div class="dropdown-content">
+          <a href="../webpage2/about.html#statement">Artist Statement</a>
+          <a href="../webpage2/about.html#cv">CV</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="../webpage3/contact.html" class="dropbtn">Contact</a>
+        <div class="dropdown-content">
+          <a href="../webpage3/contact.html#email">Email</a>
+          <a href="../webpage3/contact.html#socials">Social</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="project-page">
+    <div class="project-wrap">
+      <a class="backlink" href="../webpage1/fineart.html">← Back to Fine Art</a>
+
+      <section class="project-hero">
+        <div class="media ratio-4x5">
+          <img src="../assets/img/believed_form.jpg" alt="">
+        </div>
+
+        <aside class="project-meta">
+          <h1></h1>
+          <p class="muted">Medical Gauze · 2025</p>
+          <ul class="facts">
+            <li>Dimensions: 34"*22"*5"</li>
+            <!-- <li><strong>Location:</strong> (add)</li>
+            <li><strong>Status:</strong> (add)</li> -->
+          </ul>
+        </aside>
+      </section>
+
+      <section class="project-body">
+        <p>
+          This piece appropriates a symbol of security—the carabiner, a tool synonymous with strength,
+          safety, and reliable support—and reconstructs it entirely from medical gauze. The material,
+          delicate and porous, is typically used to dress wounds, not carry weight. In this form, the object
+          loses its expected function but not its symbolic gravity.
+        </p>
+        <p>
+          Many viewers do not immediately recognize the form as a carabiner. Its proportions are slightly
+          off, its surface too soft, too matte. This subtle weirdness generates hesitation—a pause to
+          question what the object is and whether it can be trusted. That uncertainty becomes part of the
+          piece. Some only realize its identity when told, triggering a moment of recognition layered with
+          disbelief.
+        </p>
+        <p>
+          This dissonance speaks to the core of my practice: the rehearsal of fragility, the breakdown of
+          assumptions, and the quiet endurance that remains. While the carabiner no longer holds in a
+          literal sense, its presence evokes the emotional weight we place on forms that once promised
+          safety.
+        </p>
+        <p>
+          It explores the gap between what we expect and what we experience. It acknowledges how we
+          project trust onto objects and systems, and how that trust may falter—not with violence, but with
+          a quiet unraveling. Still, the gauze doesn't disintegrate. It holds together, barely, insistently. Not
+          secure, but not broken either.
+        </p>
+      </section>
+
+      <section class="gallery" aria-label="More images">
+        <div class="media ratio-4x5">
+          <img src="../assets/img/believed_form_detail1.jpg" alt="Detail view 1">
+        </div>
+        <div class="media ratio-4x5">
+          <img src="../assets/img/believed_form_detail2.jpg" alt="Detail view 2">
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Jooyeon Lee. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

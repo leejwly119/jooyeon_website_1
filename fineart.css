@@ -1,0 +1,57 @@
+/* Fine Art page only */
+.fineart-grid{
+  display:grid;
+  gap:18px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+/* Make <a> the grid item */
+.fineart-grid > .card-link{
+  display:block;
+  text-decoration:none;
+  color:inherit;
+  grid-column: auto;
+}
+
+.fineart-grid .card{
+  height:100%;
+  padding:14px;
+  display:flex;
+  flex-direction:column;
+  transition:transform .25s ease;
+}
+
+.fineart-grid .card:hover{
+  transform:translateY(-2px);
+}
+
+.fineart-grid .media{
+  aspect-ratio:4/5;
+  border-radius:12px;
+  overflow:hidden;
+  border:1px solid var(--line);
+  margin-bottom:12px;
+}
+
+.fineart-grid img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+h3{
+  overflow:hidden;
+}
+
+@supports (-webkit-line-clamp: 2){
+  h3{
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:2;
+    line-clamp:2;
+  }
+}
+
+.fineart-grid .muted{
+  margin-top:auto;
+}

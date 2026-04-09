@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title> — Jooyeon Lee</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="project.css" />
+</head>
+
+<body>
+  <header class="nav">
+    <a href="../index.html" class="brand">JOOYEON <span>LEE</span></a>
+    <div lang="ko" class="koname">이주연</div>
+    <nav>
+      <div class="dropdown">
+        <a href="../webpage1/work.html" class="dropbtn">Work</a>
+        <div class="dropdown-content">
+          <a href="../webpage1/fineart.html">Fine Art</a>
+          <a href="../webpage1/creativecoding.html">Creative Coding</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="../webpage2/about.html" class="dropbtn">About</a>
+        <div class="dropdown-content">
+          <a href="../webpage2/about.html#statement">Artist Statement</a>
+          <a href="../webpage2/about.html#cv">CV</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="../webpage3/contact.html" class="dropbtn">Contact</a>
+        <div class="dropdown-content">
+          <a href="../webpage3/contact.html#email">Email</a>
+          <a href="../webpage3/contact.html#socials">Social</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="project-page">
+    <div class="project-wrap">
+      <a class="backlink" href="../webpage1/fineart.html">← Back to Fine Art</a>
+
+      <section class="project-hero">
+        <div class="media ratio-4x5">
+          <img src="../assets/img/friction_as_gesture_main.jpg" alt="">
+        </div>
+
+        <aside class="project-meta">
+          <h1></h1>
+          <p class="muted">Cherry Wood, Pulley, Ultrasonic Sensor, P5 JS · 2025</p>
+          <ul class="facts">
+            <li>Dimensions: 50"*50"*11.5"</li>
+            <!-- <li><strong>Location:</strong> (add)</li>
+            <li><strong>Status:</strong> (add)</li> -->
+          </ul>
+        </aside>
+      </section>
+
+      <section class="project-body">
+        <p>
+          This work begins from a quiet, ordered state: wooden blocks hang in parallel, aligned and seemingly stable. When someone passes by or approaches the installation—often without realizing it—the sensor registers their presence and activates the system.
+        </p>
+
+        <p>
+          The work foregrounds moments of friction that occur without conscious intention. A body enters the field of detection, and something shifts. The viewer does not choose to act, yet their presence becomes a trigger. This involuntary activation mirrors how discomfort often arises in social encounters: disagreement, difference, or misalignment can surface before we are prepared to acknowledge it. The tension precedes understanding.
+        </p>
+
+        <p>
+          As the mechanism responds, the wooden elements tilt and strain, echoing the compressed gesture of a frown—an embodied signal of unease. The system does not fully resolve into harmony nor collapse into chaos; it remains suspended in between.
+        </p>
+
+        <p>
+          Alongside the physical installation, a p5.js-based digital sketch runs continuously on nearby devices. The code operates as an ambient indicator—visualizing the ongoing, background systems that quietly surround and influence us.
+        </p>
+
+        <p>
+          The installation invites viewers to consider how often we trigger reactions in others simply by moving through shared space. 
+          <em>Acceptance</em>, here, is not about control or resolution, but about staying with the awareness that tension can be produced unintentionally, and that coexistence requires learning to inhabit these small, everyday disruptions.
+        </p>
+      </section>
+
+      <section class="gallery" aria-label="More images">
+        <div class="media ratio-16x9">
+          <video 
+            src="../assets/video/friction_as_gesture_video.mov"
+            autoplay 
+            muted 
+            loop 
+            playsinline
+          ></video>
+        </div>
+        <!-- <div class="media ratio-4x5">
+          <img src="../assets/img/hedgehog_dilemma_detail1.jpg" alt="Detail view 1">
+        </div>
+        <div class="media ratio-4x5">
+          <img src="../assets/img/hedgehog_dilemma_detail2.jpg" alt="Detail view 2">
+        </div>
+        <div class="media ratio-4x5">
+          <img src="../assets/img/hedgehog_dilemma_install.jpg" alt="Installation view">
+        </div>
+        <div class="media ratio-4x5">
+          <img src="../assets/img/hedgehog_dilemma_process.jpg" alt="Process image">
+        </div> -->
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Jooyeon Lee. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

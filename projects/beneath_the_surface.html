@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title> — Jooyeon Lee</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="project.css" />
+</head>
+
+<body>
+  <header class="nav">
+    <a href="../index.html" class="brand">JOOYEON <span>LEE</span></a>
+    <div lang="ko" class="koname">이주연</div>
+    <nav>
+      <div class="dropdown">
+        <a href="../webpage1/work.html" class="dropbtn">Work</a>
+        <div class="dropdown-content">
+          <a href="../webpage1/fineart.html">Fine Art</a>
+          <a href="../webpage1/creativecoding.html">Creative Coding</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="../webpage2/about.html" class="dropbtn">About</a>
+        <div class="dropdown-content">
+          <a href="../webpage2/about.html#statement">Artist Statement</a>
+          <a href="../webpage2/about.html#cv">CV</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="../webpage3/contact.html" class="dropbtn">Contact</a>
+        <div class="dropdown-content">
+          <a href="../webpage3/contact.html#email">Email</a>
+          <a href="../webpage3/contact.html#socials">Social</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="project-page">
+    <div class="project-wrap">
+      <a class="backlink" href="../webpage1/fineart.html">← Back to Fine Art</a>
+
+      <section class="project-hero">
+        <div class="media ratio-4x5">
+          <img src="../assets/img/beneath_the_surface.jpg" alt="">
+        </div>
+
+        <aside class="project-meta">
+          <h1></h1>
+          <p class="muted">Cherry Wood, Gauze, Stone · 2025</p>
+          <ul class="facts">
+            <li>Dimensions:24”*24”*15”</li>
+            <!-- <li><strong>Location:</strong> (add)</li>
+            <li><strong>Status:</strong> (add)</li> -->
+          </ul>
+        </aside>
+      </section>
+
+      <section class="project-body">
+        <p>
+          This not fully functional wooden table plays with the boundaries between object and illusion, perception and reality. Its smooth, curved form suggests familiarity—a neutral presence that could easily be mistaken for domestic furniture. Yet at its center lies an oval void, covered in delicate gauze hand-woven with thread. Though not tightly bound, the gauze is strong enough to cradle a stone, suggesting fragility and resilience at once.
+        </p>
+
+        <p>
+          A removable wooden cap allows the user to conceal or reveal the gauze and the stone. When the cap is in place and the object sits passively in a hallway or domestic space, its true nature remains hidden. Observers may dismiss it as “just a table,” never imagining the tension held just beneath the surface. This moment of concealment becomes the work’s core metaphor—a quiet commentary on how much we rely on surface appearances, often failing to question what we think we know.
+        </p>
+
+        <p>
+          One leg of the table is movable and flexible in form, inviting playful interaction. Carved into this leg is a hand—reaching, holding, perhaps even resisting—a subtle gesture that evokes both invitation and hesitation.
+        </p>
+
+        <p>
+          The piece encourages viewers to move, touch, and question. To lift the cap. To test the limits of the gauze. To reconsider what they see—and what they do not. In doing so, it asks: What truths lie beneath the things we take for granted? What parts of the world—and of ourselves—have we overlooked simply because they were hidden in plain sight?
+        </p>
+      </section>
+
+      <section class="gallery" aria-label="More images">
+        <div class="media ratio-5x4">
+          <img src="../assets/img/beneath_the_surface_detail1.jpg" alt="Detail view 1">
+        </div>
+        <div class="media ratio-5x4">
+          <img src="../assets/img/beneath_the_surface_detail2.jpg" alt="Detail view 2">
+        </div>
+        <div class="media ratio-4x5">
+          <img src="../assets/img/beneath_the_surface_detail3.jpg" alt="">
+        </div>
+        <div class="media ratio-4x5">
+          <img src="../assets/img/beneath_the_surface_detail4.jpg" alt="">
+        </div>
+        <div class="media ratio-4x5">
+          <img src="../assets/img/beneath_the_surface_detail5.jpg" alt="">
+        </div>
+        <div class="media ratio-5x4">
+          <img src="../assets/img/beneath_the_surface_detail6.jpg" alt="">
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Jooyeon Lee. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

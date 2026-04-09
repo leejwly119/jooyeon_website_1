@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title> — Jooyeon Lee</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="project.css" />
+</head>
+
+<body>
+  <header class="nav">
+    <a href="../index.html" class="brand">JOOYEON <span>LEE</span></a>
+    <div lang="ko" class="koname">이주연</div>
+    <nav>
+      <div class="dropdown">
+        <a href="../webpage1/work.html" class="dropbtn">Work</a>
+        <div class="dropdown-content">
+          <a href="../webpage1/fineart.html">Fine Art</a>
+          <a href="../webpage1/creativecoding.html">Creative Coding</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="../webpage2/about.html" class="dropbtn">About</a>
+        <div class="dropdown-content">
+          <a href="../webpage2/about.html#statement">Artist Statement</a>
+          <a href="../webpage2/about.html#cv">CV</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="../webpage3/contact.html" class="dropbtn">Contact</a>
+        <div class="dropdown-content">
+          <a href="../webpage3/contact.html#email">Email</a>
+          <a href="../webpage3/contact.html#socials">Social</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="project-page">
+    <div class="project-wrap">
+      <a class="backlink" href="../webpage1/fineart.html">← Back to Fine Art</a>
+
+      <section class="project-hero">
+        <div class="media ratio-4x5">
+          <img src="../assets/img/to_hold_or_let_go.jpg" alt="">
+        </div>
+
+        <aside class="project-meta">
+          <h1></h1>
+          <p class="muted">Ceramic · 2025</p>
+          <ul class="facts">
+            <li>Interactive</li>
+            <!-- <li><strong>Dimensions:</strong> (add)</li>
+            <li><strong>Location:</strong> (add)</li>
+            <li><strong>Status:</strong> (add)</li> -->
+          </ul>
+        </aside>
+      </section>
+
+      <section class="project-body">
+        <p>
+          This work consists of a long octahedron-shaped ceramic object held between the foreheads of two participants. To keep the object suspended, both individuals must lean toward one another, maintaining continuous pressure and shared responsibility. The ceramic’s weight and pointed edges introduce physical discomfort and risk; even with intention and care, hesitation can emerge at any moment.
+        </p>
+
+        <p>
+          When the interaction takes place between strangers, the work produces an immediate sense of awkward proximity. Foreheads—an unusually intimate point of contact—are brought together without the foundation of familiarity. Trust must be negotiated instantly, without history. The discomfort of closeness amplifies uncertainty: participants may instinctively pull back, unsure of the other’s steadiness, causing the ceramic to fall.
+        </p>
+
+        <p>
+          Yet even when the work is performed between people who trust one another, hesitation remains. The heaviness and pointed geometry of the ceramic complicate confidence. Fear of pain, imbalance, or responsibility can interrupt intention, revealing that trust alone does not eliminate fragility. The object exposes how physical and emotional risk can override relational closeness.
+        </p>
+
+        <p>
+          The inevitable possibility of collapse is central to the work. The falling of the ceramic is not a failure but a rupture of expectation—an acknowledgment that balance cannot always be sustained. The piece reflects relationships in which we believe someone will remain beside us, yet must accept that they may step back, whether deliberately or unconsciously.
+        </p>
+
+        <p>
+          In both stranger and intimate encounters, the work asks participants to confront discomfort, uncertainty, and loss of control, proposing resilience not as stability, but as the capacity to accept withdrawal, imbalance, and letting go.
+        </p>
+      </section>
+
+      <section class="gallery" aria-label="More images">
+        <div class="media ratio-5x4">
+          <img src="../assets/img/to_hold_or_let_go_detail1.jpg" alt="Detail view 1">
+        </div>
+        <!-- <div class="media ratio-4x5">
+          <img src="../assets/img/hedgehog_dilemma_detail2.jpg" alt="Detail view 2">
+        </div>
+        <div class="media ratio-4x5">
+          <img src="../assets/img/hedgehog_dilemma_install.jpg" alt="Installation view">
+        </div>
+        <div class="media ratio-4x5">
+          <img src="../assets/img/hedgehog_dilemma_process.jpg" alt="Process image">
+        </div> -->
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Jooyeon Lee. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

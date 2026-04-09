@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title> — Jooyeon Lee</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="project.css" />
+</head>
+
+<body>
+  <header class="nav">
+    <a href="../index.html" class="brand">JOOYEON <span>LEE</span></a>
+    <div lang="ko" class="koname">이주연</div>
+    <nav>
+      <div class="dropdown">
+        <a href="../webpage1/work.html" class="dropbtn">Work</a>
+        <div class="dropdown-content">
+          <a href="../webpage1/fineart.html">Fine Art</a>
+          <a href="../webpage1/creativecoding.html">Creative Coding</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="../webpage2/about.html" class="dropbtn">About</a>
+        <div class="dropdown-content">
+          <a href="../webpage2/about.html#statement">Artist Statement</a>
+          <a href="../webpage2/about.html#cv">CV</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="../webpage3/contact.html" class="dropbtn">Contact</a>
+        <div class="dropdown-content">
+          <a href="../webpage3/contact.html#email">Email</a>
+          <a href="../webpage3/contact.html#socials">Social</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="project-page">
+    <div class="project-wrap">
+      <a class="backlink" href="../webpage1/fineart.html">← Back to Fine Art</a>
+
+      <section class="project-hero">
+        <div class="media ratio-5x4">
+          <img src="../assets/img/resting_in_resistance_main.jpg" alt="">
+        </div>
+
+        <aside class="project-meta">
+          <h1></h1>
+          <p class="muted">Ceramic · 2025</p>
+          <ul class="facts">
+            <li>Dimensions: 15”*14"*12”</li>
+            <!-- <li><strong>Location:</strong> (add)</li>
+            <li><strong>Status:</strong> (add)</li> -->
+          </ul>
+        </aside>
+      </section>
+
+      <section class="project-body">
+        <p>
+          This ceramic sculpture features expressive, wave-like textures that resemble splashing water. At its center is a gentle cavity—an inviting space where one can lay down and rest their head. The material choice of ceramic, typically perceived as hard and cold, contradicts the softness and intimacy suggested by the form. This tension between appearance and experience creates a compelling sensory dissonance.
+        </p>
+
+        <p>
+          The fluid surface draws a parallel to the moment of submerging underwater, when external noise is muffled and a fleeting escape from reality is possible. But unlike water, ceramic is rigid and immovable; it brings you back to reality with its solid presence.
+        </p>
+
+        <p>
+          And yet, surprisingly, those who have experienced resting their head in this piece describe it as peaceful—even meditative. The proximity of the curved top creates a sense of enclosure and closeness. As your hand glides over the textured surface while your head is cradled inside, the interaction becomes deeply personal. The sound reverberates in a whimsical way, inviting focus and calm. Despite the material’s coldness, the experience feels warm—an intimate contradiction that invites vulnerability and reflection.
+        </p>
+
+      </section>
+
+      <section class="gallery" aria-label="More images">
+        <div class="media ratio-4x5">
+          <img src="../assets/img/resting_in_resistance_detail1.jpg" alt="Detail view 1">
+        </div>
+        <div class="media ratio-4x5">
+          <img src="../assets/img/resting_in_resistance_detail2.jpg" alt="Detail view 2">
+        </div>
+        <div class="media ratio-4x5">
+          <img src="../assets/img/resting_in_resistance_detail3.jpg" alt="Detail view 3">
+        </div>
+        <!-- <div class="media ratio-4x5">
+          <img src="../assets/img/hedgehog_dilemma_process.jpg" alt="Process image">
+        </div> -->
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Jooyeon Lee. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

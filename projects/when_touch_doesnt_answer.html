@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title> — Jooyeon Lee</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="project.css" />
+</head>
+
+<body>
+  <header class="nav">
+    <a href="../index.html" class="brand">JOOYEON <span>LEE</span></a>
+    <div lang="ko" class="koname">이주연</div>
+    <nav>
+      <div class="dropdown">
+        <a href="../webpage1/work.html" class="dropbtn">Work</a>
+        <div class="dropdown-content">
+          <a href="../webpage1/fineart.html">Fine Art</a>
+          <a href="../webpage1/creativecoding.html">Creative Coding</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="../webpage2/about.html" class="dropbtn">About</a>
+        <div class="dropdown-content">
+          <a href="../webpage2/about.html#statement">Artist Statement</a>
+          <a href="../webpage2/about.html#cv">CV</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="../webpage3/contact.html" class="dropbtn">Contact</a>
+        <div class="dropdown-content">
+          <a href="../webpage3/contact.html#email">Email</a>
+          <a href="../webpage3/contact.html#socials">Social</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="project-page">
+    <div class="project-wrap">
+      <a class="backlink" href="../webpage1/fineart.html">← Back to Fine Art</a>
+
+      <section class="project-hero">
+        <div class="media ratio-4x5">
+          <img src="../assets/img/when_touch_doesnt_answer.jpg" alt="">
+        </div>
+
+        <aside class="project-meta">
+          <h1></h1>
+          <p class="muted">Ceramic, P5 JS · 2025</p>
+          <ul class="facts">
+            <!-- <li><strong>Dimensions:</strong> (add)</li>
+            <li><strong>Location:</strong> (add)</li>
+            <li><strong>Status:</strong> (add)</li> -->
+          </ul>
+        </aside>
+      </section>
+
+      <section class="project-body">
+        <p>
+          A half-human ceramic form, bearing the imprint of a negative space I once held, is translated into a rigid, unresponsive body. Before touching it, viewers are unsure how it will feel to hug a ceramic body—cold, heavy, possibly uncomfortable—an object that resists the softness usually associated with comfort. And yet, they approach it with an instinctive desire for attachment: the simple, almost universal longing to be soothed by the act of hugging.
+        </p>
+
+        <p>
+          When they wrap their arms around the cool ceramic surface, they encounter a moment of emotional fracture. The material does not warm, soften, or yield. It does not respond. It stages the gap between what we hope intimacy will offer and what the world sometimes returns: silence, coldness, absence.
+        </p>
+
+        <p>
+          Yet the work does not end there.
+        </p>
+
+        <p>
+          A live webcam, positioned behind the sculpture, captures the act of hugging, and on a nearby screen faint hands appear, gently patting the viewer’s back in response. The body receives a reply—but not from where it expected.
+        </p>
+
+        <p>
+          For many participants, this moment is unexpectedly comforting. What begins as uncertainty shifts into relief. The delayed and displaced tenderness transforms the initial disappointment into a different kind of care—one that arrives indirectly and belatedly.
+        </p>
+
+        <p>
+          By separating touch from response, the work asks viewers to reconsider how comfort is mediated, how affection circulates, and how longing can still be acknowledged even when the object of desire remains still.
+        </p>
+      </section>
+
+      <section class="gallery" aria-label="More images">
+        <div class="media ratio-5x4">
+          <img src="../assets/img/when_touch_doesnt_answer_detail1.jpg" alt="Detail view 1">
+        </div>
+        <div class="media ratio-5x4">
+          <img src="../assets/img/when_touch_doesnt_answer_detail2.jpg" alt="Detail view 2">
+        </div>
+        <div class="media ratio-5x4">
+          <img src="../assets/img/when_touch_doesnt_answer_detail3.jpg" alt="Detail view 3">
+        </div>
+        <div class="media ratio-5x4">
+          <img src="../assets/img/when_touch_doesnt_answer_detail4.jpg" alt="Detail view 4">
+        </div>
+        <div class="media ratio-5x4">
+          <img src="../assets/img/when_touch_doesnt_answer_detail5.jpg" alt="Detail view 5">
+        </div>
+        <div class="media ratio-5x4">
+          <img src="../assets/img/when_touch_doesnt_answer_detail6.jpg" alt="Detail view 6">
+        </div>        
+    
+        <!-- <div class="media ratio-4x5">
+          <img src="../assets/img/hedgehog_dilemma_process.jpg" alt="Process image">
+        </div> -->
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Jooyeon Lee. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Jooyeon Lee</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body>
+  <header class="nav">
+    <a href="../index.html" class="brand">JOOYEON <span>LEE</span></a>
+    <div lang="ko" class="koname">이주연</div>
+
+    <nav>
+      <div class="dropdown">
+        <a href="../webpage1/work.html" class="dropbtn">Work</a>
+        <div class="dropdown-content">
+          <a href="../webpage1/fineart.html">Fine Art</a>
+          <a href="../webpage1/creativecoding.html">Creative Coding</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <a href="../webpage2/about.html" class="dropbtn">About</a>
+        <div class="dropdown-content">
+          <a href="../webpage2/about.html#cv">CV</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <a href="#" class="dropbtn">Contact</a>
+        <div class="dropdown-content">
+          <a href="#email">Email</a>
+          <a href="#socials">Social</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- EMAIL SECTION -->
+    <section id="email" class="contact" aria-label="Email Section">
+      <h2>Email Me</h2>
+
+      <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent!');">
+        <label>
+          <span>Name</span>
+          <input type="text" required placeholder="Your name">
+        </label>
+
+        <label>
+          <span>Email</span>
+          <input type="email" required placeholder="you@example.com">
+        </label>
+
+        <label class="full">
+          <span>Message</span>
+          <textarea rows="4" required placeholder="Write your message..."></textarea>
+        </label>
+
+        <button class="btn">Send</button>
+      </form>
+    </section>
+
+
+    <!-- SOCIAL LINKS SECTION -->
+    <section id="socials" class="contact" aria-label="Social Links">
+      <h2>Social</h2>
+
+      <ul style="list-style:none; padding:0; margin-top:16px;">
+        <li><a href="https://www.instagram.com/jwanderlusty17/" target="_blank" class="muted">Instagram</a></li>
+        <!-- <li><a href="https://linkedin.com" target="_blank" class="muted">LinkedIn</a></li> -->
+        <li><a href="mailto:leejwly119@gmail.com" class="muted">Email Direct Link</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Jooyeon Lee. All rights reserved.</p>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

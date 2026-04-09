@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Creative Coding — Jooyeon Lee</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body>
+
+  <header class="nav">
+    <a href="../index.html" class="brand">JOOYEON <span>LEE</span></a>
+    <div lang="ko" class="koname">이주연</div>
+
+    <nav>
+      <div class="dropdown">
+        <a href="work.html" class="dropbtn">Work</a>
+        <div class="dropdown-content">
+          <a href="fineart.html">Fine Art</a>
+          <a href="creativecoding.html">Creative Coding</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <a href="../webpage2/about.html" class="dropbtn">About</a>
+        <div class="dropdown-content">
+          <a href="../webpage2/about.html#statement">Artist Statement</a>
+          <a href="../webpage2/about.html#cv">CV</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <a href="../webpage3/contact.html" class="dropbtn">Contact</a>
+        <div class="dropdown-content">
+          <a href="../webpage3/contact.html#email">Email</a>
+          <a href="../webpage3/contact.html#socials">Social</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main style="padding-top:140px;">
+
+    <section class="work">
+      <div class="section-head">
+        <h2 class="reveal-up">Creative Coding</h2>
+        <p class="muted reveal-up delay-1">
+          Experiments in interaction, motion, systems, and computation through p5.js and python.
+        </p>
+      </div>
+
+      <div class="grid">
+        <article class="card reveal-up">
+          <div class="media ratio-4x5">
+            <iframe src="../assets/p5/experimental_clock1/index.html" title="experimental_clock1"></iframe>
+          </div>
+          <h3>Experimental Clock: Apollonian and Dionysian</h3>
+          <p class="muted">The concentric rings and radial grid still reflect Apollo’s rational clarity, but the
+            counterclockwise motion of the minutes and seconds deliberately breaks the expectation of time’s usual
+            direction. This inversion destabilizes the viewer’s sense of order, echoing Dionysian disruption. The
+            roly-poly form amplifies this instability with chaotic tilts, restoring balance and showing how order and
+            chaos continuously negotiate with one another.</p>
+        </article>
+
+
+        <article class="card reveal-up delay-1">
+          <div class="media ratio-4x5">
+            <iframe src="../assets/p5/experimental_clock2/index.html" title="experimental_clock2"></iframe>
+          </div>
+          <h3>Experimental Clock: Wrapping Reversally</h3>
+          <p class="muted">Time wraps continuously around a split, reversed play-button form, advancing only through its
+            own looping motion and the viewer’s interruptions.</p>
+        </article>
+
+
+        <article class="card reveal-up delay-2">
+          <div class="media ratio-4x5">
+            <iframe src="../assets/p5/data_portrait/index.html" title="data_portrait"></iframe>
+          </div>
+          <h3>Data Portrait: Questions of Dating and Marriage</h3>
+          <p class="muted">I chose to track how often people asked me questions or made comments related to
+            relationships and marriage. This habit is not about my own actions, but about how social expectations and
+            external voices repeat in my daily life. Tracking these questions helped me visualize how much others’
+            perceptions shape and intrude upon my personal choices.
+            My inspiration came from the shape of a hand with rings.Each ring corresponds to a different category of
+            question.</p>
+        </article>
+
+
+        <article class="card reveal-up delay-3">
+          <div class="media ratio-4x5">
+            <iframe src="../assets/p5/random_facegenerator/index.html" title="random_facegenerator"></iframe>
+          </div>
+          <h3>Random Face Generator</h3>
+          <p class="muted">Random Face Generator inspired by my sister's illustration for our siblings</p>
+        </article>
+
+
+        <article class="card reveal-up delay-4">
+          <div class="media ratio-4x3">
+            <iframe src="../assets/p5/autobiographical_game/index.html" title="autobiographical_game"></iframe>
+          </div>
+          <h3>Autobiographical Game</h3>
+          <p class="muted">An autobiographical interactive game that traces an encounter with sudden injury and explores
+            how we repair ourselves in the face of life’s unpredictability.</p>
+        </article>
+
+        <a class="card-link" href="../assets/interactive_typo_webpage/index.html">
+          <article class="card reveal-up delay-3">
+            <div class="media ratio-16x9 iframe-wrap">
+              <iframe src="../assets/interactive_typo_webpage/preview.html" title="interactive_typo_webpage"
+                loading="lazy"></iframe>
+            </div>
+            <h3>Interactive Typo Webpage(Click!)</h3>
+            <p class="muted">Multi-sketch interactive typography system with navigable structure</p>
+          </article>
+        </a>
+
+        <!--python processing, python flask, website<  -->
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Jooyeon Lee. All rights reserved.</p>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+
+</html>

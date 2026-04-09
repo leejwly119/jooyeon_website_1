@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title> — Jooyeon Lee</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="project.css" />
+</head>
+
+<body>
+  <header class="nav">
+    <a href="../index.html" class="brand">JOOYEON <span>LEE</span></a>
+    <div lang="ko" class="koname">이주연</div>
+    <nav>
+      <div class="dropdown">
+        <a href="../webpage1/work.html" class="dropbtn">Work</a>
+        <div class="dropdown-content">
+          <a href="../webpage1/fineart.html">Fine Art</a>
+          <a href="../webpage1/creativecoding.html">Creative Coding</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="../webpage2/about.html" class="dropbtn">About</a>
+        <div class="dropdown-content">
+          <a href="../webpage2/about.html#statement">Artist Statement</a>
+          <a href="../webpage2/about.html#cv">CV</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="../webpage3/contact.html" class="dropbtn">Contact</a>
+        <div class="dropdown-content">
+          <a href="../webpage3/contact.html#email">Email</a>
+          <a href="../webpage3/contact.html#socials">Social</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="project-page">
+    <div class="project-wrap">
+      <a class="backlink" href="../webpage1/fineart.html">← Back to Fine Art</a>
+
+      <section class="project-hero">
+        <div class="media ratio-4x5">
+          <img src="../assets/img/what_remains_when_control_fails.jpg" alt="">
+        </div>
+
+        <aside class="project-meta">
+          <h1></h1>
+          <p class="muted">Ceramic, Python Flask · 2025</p>
+          <ul class="facts">
+            <!-- <li><strong>Dimensions:</strong> (add)</li>
+            <li><strong>Location:</strong> (add)</li>
+            <li><strong>Status:</strong> (add)</li> -->
+          </ul>
+        </aside>
+      </section>
+
+      <section class="project-body">
+        <p>
+            This work brings together a broken ceramic traffic light and an interactive infrastructure-based Flask game to examine how systems of guidance, safety, and coordination quietly shape everyday behavior—and what happens when those systems fracture. Traffic lights are among the most familiar infrastructures: they promise clarity, order, and shared understanding. Red means stop, green means go. Yet when this system breaks down—through malfunction, ambiguity, or absence—our trust in collective rhythm falters.
+        </p>
+
+        <p>
+            The ceramic traffic light appears damaged and unreliable. Its material fragility contradicts its original function as a symbol of authority and regulation. Cracks, distortions, and missing signals render its instructions unreadable. Instead of directing movement, it produces hesitation. Viewers are left uncertain: Should I proceed? Should I wait? The object no longer governs behavior but exposes how deeply we rely on external systems to make decisions for us.
+        </p>
+
+        <p>
+            This uncertainty continues in the infrastructure Flask game, where participants navigate a system that appears rule-based but produces unpredictable outcomes. Like real infrastructure, the game operates through hidden logics, conditional pathways, and assumptions of rational order. Players attempt to follow the system, yet they quickly encounter misalignments between intention and result. Choice does not guarantee consequence; participation does not ensure clarity. The game does not simulate failure as spectacle, but rather reveals how instability is embedded within systems designed to appear seamless.
+        </p>
+
+        <p>
+            Together, the physical object and the digital interaction form a feedback loop between material breakdown and systemic uncertainty. The broken traffic light externalizes infrastructural failure as a bodily experience—pause, doubt, recalculation—while the game internalizes it, asking participants to negotiate trust, expectation, and agency within an unstable framework. Neither offers resolution. Instead, they ask viewers to remain inside the discomfort of not knowing how to proceed.
+        </p>
+
+        <p>
+            Rooted in research on infrastructure as both a technical and relational system, this work reflects my broader practice of engaging moments when support structures fail quietly rather than catastrophically. I am interested not in dramatic collapse, but in subtle misfires: the delayed signal, the unreadable instruction, the rule that no longer applies. These moments reveal how much of daily life depends on fragile agreements we rarely question until they stop working.
+        </p>
+      </section>
+
+      <section class="gallery" aria-label="More images">
+        <div class="media ratio-4x5">
+          <img src="../assets/img/what_remains_when_control_fails_detail1.jpg" alt="Detail view 1">
+        </div>
+        <div class="media ratio-4x5">
+          <img src="../assets/img/what_remains_when_control_fails_detail2.jpg" alt="Detail view 2">
+        </div>
+        <div class="media ratio-4x5">
+          <img src="../assets/img/what_remains_when_control_fails_detail3.jpg" alt="">
+        </div>
+        <div class="media ratio-4x5">
+          <img src="../assets/img/what_remains_when_control_fails_detail4.jpg" alt="">
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Jooyeon Lee. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

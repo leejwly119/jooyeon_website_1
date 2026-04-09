@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title> — Jooyeon Lee</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="project.css" />
+</head>
+
+<body>
+  <header class="nav">
+    <a href="../index.html" class="brand">JOOYEON <span>LEE</span></a>
+    <div lang="ko" class="koname">이주연</div>
+    <nav>
+      <div class="dropdown">
+        <a href="../webpage1/work.html" class="dropbtn">Work</a>
+        <div class="dropdown-content">
+          <a href="../webpage1/fineart.html">Fine Art</a>
+          <a href="../webpage1/creativecoding.html">Creative Coding</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="../webpage2/about.html" class="dropbtn">About</a>
+        <div class="dropdown-content">
+          <a href="../webpage2/about.html#statement">Artist Statement</a>
+          <a href="../webpage2/about.html#cv">CV</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="../webpage3/contact.html" class="dropbtn">Contact</a>
+        <div class="dropdown-content">
+          <a href="../webpage3/contact.html#email">Email</a>
+          <a href="../webpage3/contact.html#socials">Social</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="project-page">
+    <div class="project-wrap">
+      <a class="backlink" href="../webpage1/fineart.html">← Back to Fine Art</a>
+
+      <section class="project-hero">
+        <div class="media ratio-4x5">
+          <img src="../assets/img/the_function_of_nonfunction.jpg" alt="">
+        </div>
+
+        <aside class="project-meta">
+          <h1></h1>
+          <p class="muted">Ceramic, 3D printed PLA & TPU, Pulley, Rope· 2025</p>
+          <ul class="facts">
+            <li>Dimensions: Variable</li>
+            <!-- <li><strong>Location:</strong> (add)</li>
+            <li><strong>Status:</strong> (add)</li> -->
+          </ul>
+        </aside>
+      </section>
+
+      <section class="project-body">
+        <p>
+          This sculptural installation is composed as a seemingly functional system: a ceramic house of cards tethered to a rope that travels through a wall-mounted pulley, connects to a 3D-printed push bar via carabiner, and links to a crank mechanism. The entire setup suggests fragile balance. It looks as though any movement might bring about collapse.
+        </p>
+
+        <p>
+          And yet — nothing happens.
+        </p>
+
+        <p>
+          The pulley doesn’t pull. The push bar, flexible and printed with TPU, doesn’t shift anything at all. The carabiner is movable but holds no tension. Though the crank can be interacted with, it produces no effect. The rope is connected, <em>but the system is functionally hollow.</em>
+        </p>
+
+        <p>
+          On the ground sits the house of cards, made not of paper but of matte ceramic — heavier, more rigid, more fragile. Its visual language suggests collapse is imminent, yet paradoxically, it stands steady.
+        </p>
+
+        <p>
+          This piece explores the illusion of tension and the failure of systems we trust to act. It reflects on mechanisms—emotional, social, institutional—that appear purposeful but yield no real result. It asks: what are we participating in? What effort do we invest in appearances that go nowhere? And what happens when fragility is not what breaks, but what endures?
+        </p>
+      </section>
+
+      <section class="gallery" aria-label="More images">
+        <div class="media ratio-4x5">
+          <img src="../assets/img/the_function_of_nonfunction_detail1.jpg" alt="Detail view 1">
+        </div>
+        <div class="media ratio-4x5">
+          <img src="../assets/img/the_function_of_nonfunction_detail2.jpg" alt="Detail view 2">
+        </div>
+        <div class="media ratio-4x5">
+          <img src="../assets/img//the_function_of_nonfunction_detail3.jpg" alt="">
+        </div>
+        <div class="media ratio-4x5">
+          <img src="../assets/img//the_function_of_nonfunction_detail4.jpg" alt="e">
+        </div>
+        <div class="media ratio-5x4">
+          <img src="../assets/img//the_function_of_nonfunction_detail5.jpg" alt="e">
+        </div>
+        <div class="media ratio-5x4">
+          <img src="../assets/img//the_function_of_nonfunction_detail6.jpg" alt="e">
+        </div>
+        <div class="media ratio-5x4">
+          <img src="../assets/img//the_function_of_nonfunction_detail7.jpg" alt="e">
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Jooyeon Lee. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

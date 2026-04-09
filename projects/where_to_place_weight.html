@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title> — Jooyeon Lee</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="project.css" />
+</head>
+
+<body>
+  <header class="nav">
+    <a href="../index.html" class="brand">JOOYEON <span>LEE</span></a>
+    <div lang="ko" class="koname">이주연</div>
+    <nav>
+      <div class="dropdown">
+        <a href="../webpage1/work.html" class="dropbtn">Work</a>
+        <div class="dropdown-content">
+          <a href="../webpage1/fineart.html">Fine Art</a>
+          <a href="../webpage1/creativecoding.html">Creative Coding</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="../webpage2/about.html" class="dropbtn">About</a>
+        <div class="dropdown-content">
+          <a href="../webpage2/about.html#statement">Artist Statement</a>
+          <a href="../webpage2/about.html#cv">CV</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="../webpage3/contact.html" class="dropbtn">Contact</a>
+        <div class="dropdown-content">
+          <a href="../webpage3/contact.html#email">Email</a>
+          <a href="../webpage3/contact.html#socials">Social</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="project-page">
+    <div class="project-wrap">
+      <a class="backlink" href="../webpage1/fineart.html">← Back to Fine Art</a>
+
+      <section class="project-hero">
+        <div class="media ratio-4x5">
+          <img src="../assets/img/where_to_place_weight.jpg" alt="">
+        </div>
+
+        <aside class="project-meta">
+          <h1></h1>
+          <p class="muted">Ceramic, Zinc Photos · 2025</p>
+          <ul class="facts">
+            <!-- <li><strong>Dimensions:</strong> (add)</li>
+            <li><strong>Location:</strong> (add)</li>
+            <li><strong>Status:</strong> (add)</li> -->
+          </ul>
+        </aside>
+      </section>
+
+      <section class="project-body">
+        <p>
+          This foldable ceramic table refuses stability. Its hinges do not lock, and its structure remains difficult to control or fully stand. When pressure is applied to one side, the table does not absorb the force; instead, tension travels across the surface, pulling at the opposite edge, the hinge line, and the legs. A push becomes a demand elsewhere. Weight placed in one location produces strain in another, making balance something that must be actively negotiated rather than assumed.
+        </p>
+
+        <p>
+          Because the table is made of ceramic—rigid yet fragile—this transfer of tension is heightened. The material amplifies every shift: a slight lean causes the surface to torque, legs to slide, and joints to resist alignment. The table responds not with stability, but with vibration, hesitation, and the threat of collapse. To keep it upright, bodies must redistribute force—holding a corner, bracing a leg, or counteracting movement from the opposite side. The object turns pressure into a relational condition.
+        </p>
+
+        <p>
+          The table is accompanied by small zinc photographs placed on either side, positioned in relation to the object like chairs beside a table. Each plate bears images of the table in unstable states: leaning, partially collapsed, or awkwardly propped through improvisation. In the documentation, hands appear holding a leg, stopping a fall, or attempting to correct a misalignment. In one image, the table is nearly collapsing, caught mid-tilt; in another, it is momentarily sustained through bodily intervention. These images do not document success, but trace how tension circulates through the object and into those who attempt to support it.
+        </p>
+      </section>
+
+      <section class="gallery" aria-label="More images">
+        <div class="media ratio-4x5">
+          <img src="../assets/img/where_to_place_weight_detail1.jpg" alt="Detail view 1">
+        </div>
+        <div class="media ratio-4x5">
+          <img src="../assets/img/where_to_place_weight_detail2.jpg" alt="Detail view 2">
+        </div>
+        <div class="media ratio-4x5">
+          <img src="../assets/img/where_to_place_weight_detail3.jpg" alt="Detail view 3">
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Jooyeon Lee. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
