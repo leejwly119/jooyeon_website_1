@@ -480,9 +480,18 @@ h3 {
   border: none;
   display: block;
 }
+.feature-card {
+  grid-column: span 12;
+}
 
+@media (min-width: 900px) {
+  .feature-card {
+    grid-column: span 8;
+  }
+}
 .iframe-wrap {
   position: relative;
+  overflow: hidden;
 }
 
 .iframe-wrap iframe {
@@ -491,7 +500,8 @@ h3 {
   width: 100%;
   height: 100%;
   border: none;
-
+  transform: scale(.85);
+  transform-origin: top left;
   pointer-events: none;
   /* prevents interaction inside card */
 }
