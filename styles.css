@@ -250,7 +250,7 @@ main {
 
 
 /* Artist Statement styling */
-/* .statement {
+.statement {
   max-width: 820px;
   margin: 0 auto calc(var(--pad) * 2);
   padding: calc(var(--pad) * 1.5);
@@ -268,38 +268,8 @@ main {
   font-size: 16px;
   line-height: 1.7;
   color: var(--muted);
-} */
-.artist-statement {
-  box-sizing: border-box;
-  width: 100%;
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 16px 48px;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
-.artist-statement h1 {
-  margin: 0 0 24px;
-  color: #f2f2f2;
-  font-size: clamp(2.2rem, 4vw, 3.25rem);
-  font-weight: 700;
-  line-height: 1.05;
-  letter-spacing: -0.02em;
-}
-
-.artist-statement-copy {
-  color: #b8b8b8;
-}
-
-.artist-statement p {
-  margin: 0 0 1.35em;
-  font-size: clamp(1.05rem, 1.7vw, 1.35rem);
-  line-height: 1.7;
-}
-
-.artist-statement p:last-child {
-  margin-bottom: 0;
-}
 
 @media (max-width: 640px) {
   .artist-statement {
