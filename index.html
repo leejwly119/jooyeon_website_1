@@ -6,34 +6,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Jooyeon Lee — Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="nav.css" />
 
 </head>
 
 <body>
-  <header class="nav">
-    <a href="#" class="brand">JOOYEON <span>LEE</span></a>
-    <div lang="ko" class="koname">이주연</div>
-    <nav>
-      <div class="dropdown">
-        <a href="webpage1/work.html" class="dropbtn">Work</a>
-        <div class="dropdown-content">
-          <a href="webpage1/fineart.html">Fine Art</a>
-          <a href="webpage1/creativecoding.html">Creative Coding</a>
+  <header class="nav" aria-label="Primary Navigation">
+    <div class="nav-header">
+      <div class="nav-brand-group">
+        <a href="index.html" class="brand">JOOYEON <span>LEE</span></a>
+        <div lang="ko" class="koname">이주연</div>
+      </div>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"
+        aria-label="Toggle navigation">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+    </div>
+
+    <nav id="site-nav" class="nav-links">
+      <a href="index.html" class="nav-link active">Home</a>
+
+      <div class="nav-group dropdown">
+        <a href="webpage1/work.html" class="nav-link dropbtn">Work</a>
+        <div class="nav-sub dropdown-content">
+          <a href="webpage1/fineart.html" class="nav-sublink">Fine Art</a>
+          <a href="webpage1/creativecoding.html" class="nav-sublink">Creative Coding</a>
         </div>
       </div>
-      <div class="dropdown">
-        <a href="webpage2/about.html" class="dropbtn">About</a>
-        <div class="dropdown-content">
-          <a href="webpage2/about.html#cv">CV</a>
-        </div>
-      </div>
-      <div class="dropdown">
-        <a href="webpage3/contact.html" class="dropbtn">Contact</a>
-        <div class="dropdown-content">
-          <a href="webpage3/contact.html">Email</a>
-          <a href="webpage3/contact.html#socials">Social</a>
-        </div>
-      </div>
+
+      <a href="webpage2/about.html#statement" class="nav-link">Artist Statement</a>
+      <a href="webpage2/about.html#cv" class="nav-link">CV</a>
+      <a href="webpage3/contact.html" class="nav-link">Contact</a>
     </nav>
   </header>
 
@@ -56,58 +60,58 @@
     </div>
   </section>
 
- <!-- Artist Statement -->
+  <!-- Artist Statement -->
   <section id="statement" class="statement">
-      <h2>Artist Statement</h2>
-<p>
-  My practice examines negotiation as an ongoing condition of living within
-  structures and circumstances that cannot be fully controlled. I am interested
-  in how bodies respond when spaces, materials, and systems have already shaped
-  the possibilities of action. Rather than approaching instability as a
-  temporary disruption to overcome, I consider it a condition inhabited through
-  continuous adjustment: a shift in posture, a change in pressure, or a decision
-  to remain, withdraw, or continue.
-</p>
+    <h2>Artist Statement</h2>
+    <p>
+      My practice examines negotiation as an ongoing condition of living within
+      structures and circumstances that cannot be fully controlled. I am interested
+      in how bodies respond when spaces, materials, and systems have already shaped
+      the possibilities of action. Rather than approaching instability as a
+      temporary disruption to overcome, I consider it a condition inhabited through
+      continuous adjustment: a shift in posture, a change in pressure, or a decision
+      to remain, withdraw, or continue.
+    </p>
 
-<p>
-  I create sculptural situations in which balance is provisional and must be
-  repeatedly produced. Working across ceramic, rope, wood, metal, fabric, and
-  responsive mechanisms, I construct systems that distribute weight, tension,
-  movement, and responsibility across bodies and objects. Materials do not
-  simply represent these relations. Their friction, resistance, flexibility,
-  and weight actively shape how each encounter unfolds.
-</p>
+    <p>
+      I create sculptural situations in which balance is provisional and must be
+      repeatedly produced. Working across ceramic, rope, wood, metal, fabric, and
+      responsive mechanisms, I construct systems that distribute weight, tension,
+      movement, and responsibility across bodies and objects. Materials do not
+      simply represent these relations. Their friction, resistance, flexibility,
+      and weight actively shape how each encounter unfolds.
+    </p>
 
-<p>
-  My working process begins with prototyping, observation, and recalibration. I
-  examine how an arrangement organizes movement before a participant consciously
-  decides how to respond, and how effort becomes unevenly distributed once an
-  interaction begins. Some bodies compensate more, move more carefully, or
-  sustain a condition for longer. What initially appears to be a shared system
-  is often maintained through forms of labor that remain partial, unequal, or
-  unnoticed.
-</p>
+    <p>
+      My working process begins with prototyping, observation, and recalibration. I
+      examine how an arrangement organizes movement before a participant consciously
+      decides how to respond, and how effort becomes unevenly distributed once an
+      interaction begins. Some bodies compensate more, move more carefully, or
+      sustain a condition for longer. What initially appears to be a shared system
+      is often maintained through forms of labor that remain partial, unequal, or
+      unnoticed.
+    </p>
 
-<p>
-  Participation in my work is neither guaranteed nor treated as an ideal. A
-  viewer may activate a sculpture, observe another person negotiating it,
-  misunderstand its use, hesitate, or refuse. These responses are not external
-  to the work. They reveal how interaction depends on prior constraints,
-  interpretation, proximity, and willingness. I am less interested in whether
-  participation succeeds than in the conditions that make action possible,
-  difficult, or uneven in the first place.
-</p>
+    <p>
+      Participation in my work is neither guaranteed nor treated as an ideal. A
+      viewer may activate a sculpture, observe another person negotiating it,
+      misunderstand its use, hesitate, or refuse. These responses are not external
+      to the work. They reveal how interaction depends on prior constraints,
+      interpretation, proximity, and willingness. I am less interested in whether
+      participation succeeds than in the conditions that make action possible,
+      difficult, or uneven in the first place.
+    </p>
 
-<p>
-  Across these works, negotiation does not lead toward resolution or
-  equilibrium. It becomes a way of continuing within imbalance: recognizing
-  what cannot be changed, identifying what can still be adjusted, and sustaining
-  movement without the assurance of stability. My sculptures make this process
-  perceptible, framing stability not as a fixed state but as a temporary effect
-  produced through continuous, distributed, and often unequal effort.
-</p>
+    <p>
+      Across these works, negotiation does not lead toward resolution or
+      equilibrium. It becomes a way of continuing within imbalance: recognizing
+      what cannot be changed, identifying what can still be adjusted, and sustaining
+      movement without the assurance of stability. My sculptures make this process
+      perceptible, framing stability not as a fixed state but as a temporary effect
+      produced through continuous, distributed, and often unequal effort.
+    </p>
   </section>
-  
+
   <!-- Work grid (cards) -->
   <section id="work" class="work" aria-label="Selected work">
     <div class="section-head">

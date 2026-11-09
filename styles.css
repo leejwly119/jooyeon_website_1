@@ -222,7 +222,7 @@ main {
   overflow: hidden;
   border-block: 1px solid var(--line);
   background: #101012;
-  margin-bottom: calc(var(--pad) * 2);
+  margin-bottom: 0;
 }
 
 .marquee .track {

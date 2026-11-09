@@ -1,5 +1,8 @@
 // Year
-document.getElementById('year').textContent = new Date().getFullYear();
+const yearEl = document.getElementById('year');
+if (yearEl) {
+  yearEl.textContent = new Date().getFullYear();
+}
 
 // IntersectionObserver for reveal-ups
 const io = new IntersectionObserver((entries)=>{
@@ -23,22 +26,66 @@ document.addEventListener('visibilitychange', ()=>{
   }
 });
 
+// Expandable Work sub-navigation (hover + keyboard support without flickering)
 document.querySelectorAll(".dropdown").forEach(dropdown => {
   let timeout;
 
   dropdown.addEventListener("mouseenter", () => {
-    // close all other dropdowns
-    document.querySelectorAll(".dropdown").forEach(d => {
-      if (d !== dropdown) d.classList.remove("open");
-    });
-
     clearTimeout(timeout);
     dropdown.classList.add("open");
   });
 
   dropdown.addEventListener("mouseleave", () => {
+    clearTimeout(timeout);
     timeout = setTimeout(() => {
       dropdown.classList.remove("open");
-    }, 350); // 👈 delay in ms (300–500 is ideal)
+    }, 400);
+  });
+
+  dropdown.addEventListener("focusin", () => {
+    clearTimeout(timeout);
+    dropdown.classList.add("open");
+  });
+
+  dropdown.addEventListener("focusout", (e) => {
+    if (!dropdown.contains(e.relatedTarget)) {
+      dropdown.classList.remove("open");
+    }
   });
 });
+
+// Mobile navigation toggle
+const navHeader = document.querySelector(".nav");
+const navToggle = document.querySelector(".nav-toggle");
+const navLinks = document.querySelectorAll(".nav-links a");
+
+if (navHeader && navToggle) {
+  navToggle.addEventListener("click", () => {
+    const isOpen = navHeader.classList.toggle("menu-open");
+    navToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+  });
+
+  navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      if (navHeader.classList.contains("menu-open")) {
+        navHeader.classList.remove("menu-open");
+        navToggle.setAttribute("aria-expanded", "false");
+      }
+    });
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && navHeader.classList.contains("menu-open")) {
+      navHeader.classList.remove("menu-open");
+      navToggle.setAttribute("aria-expanded", "false");
+      navToggle.focus();
+    }
+  });
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth >= 900 && navHeader.classList.contains("menu-open")) {
+      navHeader.classList.remove("menu-open");
+      navToggle.setAttribute("aria-expanded", "false");
+    }
+  });
+}

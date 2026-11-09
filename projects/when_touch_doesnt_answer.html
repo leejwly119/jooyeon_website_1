@@ -6,34 +6,36 @@
   <title> — Jooyeon Lee</title>
   <link rel="stylesheet" href="../styles.css" />
   <link rel="stylesheet" href="project.css" />
+  <link rel="stylesheet" href="../nav.css" />
 </head>
 
 <body>
-  <header class="nav">
-    <a href="../index.html" class="brand">JOOYEON <span>LEE</span></a>
-    <div lang="ko" class="koname">이주연</div>
-    <nav>
-      <div class="dropdown">
-        <a href="../webpage1/work.html" class="dropbtn">Work</a>
-        <div class="dropdown-content">
-          <a href="../webpage1/fineart.html">Fine Art</a>
-          <a href="../webpage1/creativecoding.html">Creative Coding</a>
+  <header class="nav" aria-label="Primary Navigation">
+    <div class="nav-header">
+      <div class="nav-brand-group">
+        <a href="../index.html" class="brand">JOOYEON <span>LEE</span></a>
+        <div lang="ko" class="koname">이주연</div>
+      </div>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+    </div>
+
+    <nav id="site-nav" class="nav-links">
+      <a href="../index.html" class="nav-link">Home</a>
+
+      <div class="nav-group dropdown active-group">
+        <a href="../webpage1/work.html" class="nav-link dropbtn active">Work</a>
+        <div class="nav-sub dropdown-content">
+          <a href="../webpage1/fineart.html" class="nav-sublink active">Fine Art</a>
+          <a href="../webpage1/creativecoding.html" class="nav-sublink">Creative Coding</a>
         </div>
       </div>
-      <div class="dropdown">
-        <a href="../webpage2/about.html" class="dropbtn">About</a>
-        <div class="dropdown-content">
-          <a href="../webpage2/about.html#statement">Artist Statement</a>
-          <a href="../webpage2/about.html#cv">CV</a>
-        </div>
-      </div>
-      <div class="dropdown">
-        <a href="../webpage3/contact.html" class="dropbtn">Contact</a>
-        <div class="dropdown-content">
-          <a href="../webpage3/contact.html#email">Email</a>
-          <a href="../webpage3/contact.html#socials">Social</a>
-        </div>
-      </div>
+
+      <a href="../webpage2/about.html#statement" class="nav-link">Artist Statement</a>
+      <a href="../webpage2/about.html#cv" class="nav-link">CV</a>
+      <a href="../webpage3/contact.html" class="nav-link">Contact</a>
     </nav>
   </header>
 
@@ -114,8 +116,6 @@
     <p>© <span id="year"></span> Jooyeon Lee. All rights reserved.</p>
   </footer>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  <script src="../script.js"></script>
 </body>
 </html>

@@ -1,0 +1,346 @@
+/* ==========================================================================
+   Global Sidebar & Responsive Navigation (nav.css)
+   Reuses global variables from styles.css: --bg, --fg, --muted, --line, --pad, --radius
+   ========================================================================== */
+
+:root {
+  --sidebar-width: 220px;
+  --mobile-nav-height: 60px;
+}
+
+/* --- Page Layout Offset for Fixed Sidebar --- */
+@media (min-width: 900px) {
+  body {
+    padding-left: var(--sidebar-width);
+  }
+
+  main,
+  .project-page {
+    padding-top: calc(var(--pad) * 1.5);
+  }
+}
+
+@media (max-width: 899px) {
+  body {
+    padding-left: 0;
+    overflow-x: hidden;
+  }
+
+  main,
+  .project-page {
+    padding-top: calc(var(--mobile-nav-height) + 28px);
+  }
+}
+
+/* Anchor scroll offset so fixed navigation never covers targets */
+#statement,
+#cv,
+#work,
+#about,
+#contact,
+#email,
+#socials {
+  scroll-margin-top: 32px;
+}
+
+@media (max-width: 899px) {
+  #statement,
+  #cv,
+  #work,
+  #about,
+  #contact,
+  #email,
+  #socials {
+    scroll-margin-top: calc(var(--mobile-nav-height) + 20px);
+  }
+}
+
+/* --- Sidebar Container (Desktop Fixed Left) --- */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: var(--sidebar-width);
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding: 40px 28px;
+  background: var(--bg);
+  border-right: 1px solid var(--line);
+  border-radius: 0;
+  inset: 0 auto 0 0;
+  backdrop-filter: none;
+}
+
+.nav-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 44px;
+}
+
+.nav-brand-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.nav .brand {
+  color: var(--fg);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 0.08em;
+  line-height: 1.2;
+  transition: opacity 0.2s ease;
+}
+
+.nav .brand span {
+  opacity: 0.65;
+  font-weight: 500;
+}
+
+.nav .brand:hover {
+  opacity: 0.85;
+}
+
+.koname {
+  position: static;
+  font-size: 13px;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+  pointer-events: auto;
+}
+
+/* --- Primary Navigation Links --- */
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  width: 100%;
+}
+
+.nav .nav-links a {
+  margin-left: 0;
+}
+
+.nav-link,
+.dropbtn {
+  display: inline-block;
+  width: 100%;
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 1.4;
+  padding: 2px 0;
+  opacity: 1;
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus-visible,
+.dropbtn:hover,
+.dropbtn:focus-visible,
+.nav-link.active,
+.dropbtn.active {
+  color: var(--fg);
+  opacity: 1;
+}
+
+.nav-link:focus-visible,
+.dropbtn:focus-visible,
+.nav-sublink:focus-visible {
+  outline: 1px solid var(--fg);
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
+/* --- Nested Work Navigation --- */
+.nav-group.dropdown {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.nav-sub.dropdown-content {
+  position: static;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+  width: 100%;
+  background: transparent;
+  backdrop-filter: none;
+  border: none;
+  border-left: 1px solid var(--line);
+  border-radius: 0;
+  padding: 0 0 0 14px;
+  margin-left: 2px;
+  margin-top: 0;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  pointer-events: none;
+  transition:
+    max-height 0.28s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.22s ease,
+    margin-top 0.28s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.nav-group.dropdown.open .nav-sub.dropdown-content,
+.nav-group.dropdown.active-group .nav-sub.dropdown-content,
+.nav-group.dropdown:focus-within .nav-sub.dropdown-content {
+  max-height: 100px;
+  opacity: 1;
+  margin-top: 8px;
+  pointer-events: auto;
+}
+
+.nav-sub.dropdown-content a.nav-sublink {
+  display: block;
+  padding: 2px 0;
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--muted);
+  text-decoration: none;
+  opacity: 0.85;
+  background: transparent;
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+.nav-sub.dropdown-content a.nav-sublink:hover,
+.nav-sub.dropdown-content a.nav-sublink:focus-visible,
+.nav-sub.dropdown-content a.nav-sublink.active {
+  color: var(--fg);
+  opacity: 1;
+  background: transparent;
+}
+
+/* --- Mobile Menu Toggle Button (Hidden on Desktop) --- */
+.nav-toggle {
+  display: none;
+  appearance: none;
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  color: var(--fg);
+  width: 38px;
+  height: 34px;
+  padding: 0;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  transition: border-color 0.2s ease;
+}
+
+.nav-toggle:hover,
+.nav-toggle:focus-visible {
+  border-color: var(--muted);
+}
+
+.nav-toggle-bar {
+  display: block;
+  width: 16px;
+  height: 1.5px;
+  background: var(--fg);
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.nav.menu-open .nav-toggle-bar:first-child {
+  transform: translateY(3.25px) rotate(45deg);
+}
+
+.nav.menu-open .nav-toggle-bar:last-child {
+  transform: translateY(-3.25px) rotate(-45deg);
+}
+
+/* --- Mobile Compact Top Navigation (< 900px) --- */
+@media (max-width: 899px) {
+  .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    background: color-mix(in oklab, var(--bg), transparent 12%);
+    backdrop-filter: blur(10px);
+    border-right: none;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .nav-header {
+    height: var(--mobile-nav-height);
+    padding: 0 var(--pad);
+    margin-bottom: 0;
+    align-items: center;
+  }
+
+  .nav-brand-group {
+    flex-direction: row;
+    align-items: baseline;
+    gap: 10px;
+  }
+
+  .nav-toggle {
+    display: inline-flex;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px var(--pad) 24px;
+    border-top: 1px solid var(--line);
+    background: var(--bg);
+  }
+
+  .nav.menu-open .nav-links {
+    display: flex;
+  }
+
+  .nav-link,
+  .dropbtn {
+    font-size: 15px;
+    padding: 4px 0;
+  }
+
+  /* Always show Fine Art & Creative Coding inside mobile menu for direct touch access */
+  .nav-sub.dropdown-content {
+    max-height: none;
+    opacity: 1;
+    margin-top: 6px;
+    pointer-events: auto;
+    padding-left: 14px;
+    gap: 8px;
+  }
+
+  .nav-sub.dropdown-content a.nav-sublink {
+    font-size: 14px;
+    padding: 3px 0;
+  }
+}
+
+/* --- About Page Statement & CV Separation --- */
+.about-page .statement {
+  max-width: 860px;
+  margin: 0 auto calc(var(--pad) * 2);
+}
+
+.about-page .cv {
+  border-top: 1px solid var(--line);
+  padding-top: calc(var(--pad) * 2);
+}
+
