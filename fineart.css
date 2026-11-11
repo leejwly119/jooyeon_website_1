@@ -55,3 +55,23 @@ h3{
 .fineart-grid .muted{
   margin-top:auto;
 }
+
+/* Editorial Year Sections */
+.year-section{
+  max-width:1320px;
+  margin:0 auto 48px;
+}
+
+.year-section:last-child{
+  margin-bottom:0;
+}
+
+.year-heading{
+  font-size:14px;
+  font-weight:500;
+  letter-spacing:0.12em;
+  color:var(--muted);
+  margin:0 0 18px;
+  padding-bottom:8px;
+  border-bottom:1px solid var(--line);
+}

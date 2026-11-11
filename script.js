@@ -89,3 +89,34 @@ if (navHeader && navToggle) {
     }
   });
 }
+
+// Active year highlighting on Fine Art page
+const yearSections = document.querySelectorAll(".year-section[id]");
+const yearLinks = document.querySelectorAll(".nav-yearlink");
+
+if (yearSections.length > 0 && yearLinks.length > 0) {
+  const updateActiveYear = () => {
+    const triggerLine = window.innerHeight * 0.28;
+    let currentId = yearSections[0].id;
+
+    yearSections.forEach(section => {
+      const rect = section.getBoundingClientRect();
+      if (rect.top <= triggerLine) {
+        currentId = section.id;
+      }
+    });
+
+    if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 20) {
+      currentId = yearSections[yearSections.length - 1].id;
+    }
+
+    yearLinks.forEach(link => {
+      const href = link.getAttribute("href") || "";
+      link.classList.toggle("active", href.endsWith(`#${currentId}`));
+    });
+  };
+
+  window.addEventListener("scroll", updateActiveYear, { passive: true });
+  window.addEventListener("hashchange", updateActiveYear);
+  updateActiveYear();
+}

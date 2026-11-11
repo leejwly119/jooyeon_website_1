@@ -39,8 +39,9 @@
 #about,
 #contact,
 #email,
-#socials {
-  scroll-margin-top: 32px;
+#socials,
+.year-section {
+  scroll-margin-top: 36px;
 }
 
 @media (max-width: 899px) {
@@ -50,7 +51,8 @@
   #about,
   #contact,
   #email,
-  #socials {
+  #socials,
+  .year-section {
     scroll-margin-top: calc(var(--mobile-nav-height) + 20px);
   }
 }
@@ -156,7 +158,8 @@
 
 .nav-link:focus-visible,
 .dropbtn:focus-visible,
-.nav-sublink:focus-visible {
+.nav-sublink:focus-visible,
+.nav-yearlink:focus-visible {
   outline: 1px solid var(--fg);
   outline-offset: 4px;
   border-radius: 2px;
@@ -198,7 +201,7 @@
 .nav-group.dropdown.open .nav-sub.dropdown-content,
 .nav-group.dropdown.active-group .nav-sub.dropdown-content,
 .nav-group.dropdown:focus-within .nav-sub.dropdown-content {
-  max-height: 100px;
+  max-height: 220px;
   opacity: 1;
   margin-top: 8px;
   pointer-events: auto;
@@ -219,6 +222,36 @@
 .nav-sub.dropdown-content a.nav-sublink:hover,
 .nav-sub.dropdown-content a.nav-sublink:focus-visible,
 .nav-sub.dropdown-content a.nav-sublink.active {
+  color: var(--fg);
+  opacity: 1;
+  background: transparent;
+}
+
+/* --- Nested Fine Art Year Links --- */
+.nav-years {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-left: 12px;
+  margin: -2px 0 4px;
+}
+
+.nav-sub.dropdown-content a.nav-yearlink {
+  display: block;
+  padding: 1px 0;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  color: var(--muted);
+  text-decoration: none;
+  opacity: 0.68;
+  background: transparent;
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+.nav-sub.dropdown-content a.nav-yearlink:hover,
+.nav-sub.dropdown-content a.nav-yearlink:focus-visible,
+.nav-sub.dropdown-content a.nav-yearlink.active {
   color: var(--fg);
   opacity: 1;
   background: transparent;
@@ -330,6 +363,17 @@
   .nav-sub.dropdown-content a.nav-sublink {
     font-size: 14px;
     padding: 3px 0;
+  }
+
+  .nav-years {
+    padding-left: 14px;
+    gap: 5px;
+    margin: 0 0 4px;
+  }
+
+  .nav-sub.dropdown-content a.nav-yearlink {
+    font-size: 13px;
+    padding: 2px 0;
   }
 }
 
