@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Embedded Labor — Jooyeon Lee</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="project.css" />
+  <link rel="stylesheet" href="../nav.css" />
+</head>
+
+<body>
+  <header class="nav" aria-label="Primary Navigation">
+    <div class="nav-header">
+      <div class="nav-brand-group">
+        <a href="../index.html" class="brand">JOOYEON <span>LEE</span></a>
+        <div lang="ko" class="koname">이주연</div>
+      </div>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"
+        aria-label="Toggle navigation">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+    </div>
+
+    <nav id="site-nav" class="nav-links">
+      <a href="../index.html" class="nav-link">Home</a>
+
+      <div class="nav-group dropdown active-group">
+        <a href="../webpage1/work.html" class="nav-link dropbtn active">Work</a>
+        <div class="nav-sub dropdown-content">
+          <a href="../webpage1/fineart.html" class="nav-sublink active">Fine Art</a>
+          <div class="nav-years">
+            <a href="../webpage1/fineart.html#2026" class="nav-yearlink active">2026</a>
+            <a href="../webpage1/fineart.html#2025" class="nav-yearlink">2025</a>
+            <a href="../webpage1/fineart.html#2024" class="nav-yearlink">2024</a>
+          </div>
+          <a href="../webpage1/creativecoding.html" class="nav-sublink">Creative Coding</a>
+        </div>
+      </div>
+
+      <a href="../webpage2/about.html#statement" class="nav-link">Artist Statement</a>
+      <a href="../webpage2/about.html#cv" class="nav-link">CV</a>
+      <a href="../webpage3/contact.html" class="nav-link">Contact</a>
+    </nav>
+  </header>
+
+  <main class="project-page">
+    <div class="project-wrap">
+      <a class="backlink" href="../webpage1/fineart.html#2026">← Back to Fine Art</a>
+
+      <section class="project-hero">
+        <!-- Replace with <img src="../assets/img/..." alt="Embedded Labor — installation view"> -->
+        <div class="media ratio-4x5 project-image-placeholder">
+          <span>Image 01 — installation view</span>
+        </div>
+
+        <aside class="project-meta">
+          <h1>Embedded Labor</h1>
+          <p class="muted">Installation / Sculpture · 2026</p>
+          <ul class="facts">
+            <li>Materials: Ceramic, metal, mixed media</li>
+            <!-- <li><strong>Location:</strong> (add)</li>
+            <li><strong>Status:</strong> (add)</li> -->
+          </ul>
+        </aside>
+      </section>
+
+      <section class="project-body">
+        <p>Embedded Labor examines how stability is produced through forms of work that often remain unseen until a system begins to fail. The installation considers pressure not as something carried by a single individual, but as something distributed across bodies, objects, and institutional structures.</p>
+
+        <p>Ceramic and metal operate as both material and structural conditions within the work. Their different properties—rigidity, fragility, weight, and resistance—allow pressure to move between parts rather than remain localized. What appears stable is therefore dependent on continuous adjustment and support.</p>
+
+        <p>The work developed from my broader research into healthcare systems, where responsibility is distributed among patients, clinicians, families, administrative structures, and physical infrastructure. Rather than representing a hospital literally, Embedded Labor focuses on the mechanisms of holding, transferring, and compensating that allow a system to continue functioning.</p>
+
+        <p>The installation asks what kinds of labor become visible only when they are no longer being performed, and how stability can itself be understood as the temporary result of ongoing, uneven maintenance.</p>
+      </section>
+
+      <section class="gallery" aria-label="More images">
+        <!-- Replace with <img src="../assets/img/..." alt="Embedded Labor — detail"> -->
+        <div class="media ratio-4x5 project-image-placeholder">
+          <span>Image 02 — detail</span>
+        </div>
+
+        <!-- Replace with <img src="../assets/img/..." alt="Embedded Labor — interaction / spatial view"> -->
+        <div class="media ratio-4x5 project-image-placeholder">
+          <span>Image 03 — interaction / spatial view</span>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Jooyeon Lee. All rights reserved.</p>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+
+</html>
+

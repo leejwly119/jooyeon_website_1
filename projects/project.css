@@ -25,3 +25,13 @@
     }
     .backlink{display:inline-block; margin:0 0 12px; color:var(--fg); opacity:.8; text-decoration:none}
     .backlink:hover{opacity:1}
+
+    .project-image-placeholder {
+      min-height: 320px;
+      display: grid;
+      place-items: center;
+      border: 1px solid var(--line);
+      background: #111214;
+      color: var(--muted);
+      font-size: 13px;
+    }

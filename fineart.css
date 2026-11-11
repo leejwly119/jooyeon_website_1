@@ -2,7 +2,7 @@
 .fineart-grid{
   display:grid;
   gap:18px;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
 }
 
 /* Make <a> the grid item */
@@ -74,4 +74,13 @@ h3{
   margin:0 0 18px;
   padding-bottom:8px;
   border-bottom:1px solid var(--line);
+}
+
+.fineart-grid .project-image-placeholder{
+  display:grid;
+  place-items:center;
+  border:1px solid var(--line);
+  background:#111214;
+  color:var(--muted);
+  font-size:13px;
 }
